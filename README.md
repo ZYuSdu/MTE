@@ -17,7 +17,7 @@
 #train spatial view
 python train.py --view_name='spatial'
 # eval MTE
-python tasks.py ----task='mte'
+python tasks.py --task='mte'
    ```
   
 ## Citation  
