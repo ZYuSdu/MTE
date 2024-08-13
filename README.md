@@ -14,12 +14,10 @@
   
 ## Training  
   ```python
-# run pFedCTP 
-python main.py --algo=pFedCTP --batch_size=32  --target_city=shenzhen --num_rounds=90 --local_epochs=150 --target_epochs=50 --gcn_layers=1
-# run pFedCTP-woF
-python main.py --algo=pFedCTP-woF  --batch_size=32  --target_city=shenzhen --num_rounds=90  --local_epochs=150 --gcn_layers=1
-# run pFedCTP-Trans
-python main.py --algo=pFedCTP-Trans --batch_size=32  --target_city=shenzhen --num_rounds=90  --target_epochs=50 --gcn_layers=1
+#train spatial view
+python train.py --view_name='spatial'
+# eval MTE
+python tasks.py ----task='mte'
    ```
   
 ## Citation  
