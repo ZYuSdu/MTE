@@ -1,4 +1,5 @@
 #  Urban region representation learning with human trajectories: a multi-view approach incorporating transition, spatial, and temporal perspectives
+This project is linked to a paper published in GISCIENCE & Remote Sensing: Urban region representation learning with human trajectories: a multi-view approach incorporating transition, spatial, and temporal perspectives. In this study, we propose a novel approach MTE for learning effective region representations with human trajectories in a fully unsupervised manner. MTE models three salient information perspectives of trajectory data, transition, spatial, and temporal views, and utilizes varying machine learning techniques based on the traits of different views. 
   <img src="MTE.jpg">
 
 ## Requirements
@@ -9,7 +10,10 @@
 - tqdm
 - sklearn
 - scipy
-  
+
+## Structure
+There are two main scripts in this repository: train.py and tasks.py.
+
 
   
 ## Training  
