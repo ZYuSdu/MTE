@@ -14,12 +14,16 @@ This project is linked to a paper published in GISCIENCE & Remote Sensing: Urban
 ## Structure
 There are two main scripts in this repository: train.py and tasks.py.
 
-
-  
-## Training  
+### train.py
+train.py is used to learn the region representations. Due to data privacy protection restrictions, we cannot provide the original data. However, we have manually created some training data to help readers understand our code. The pre-trained base station transition embeddings are loaded, and graph contrastive learning techniques are used to separately learn the embeddings for the spatial and temporal views, which are then mapped into regional representations using Voronoi polygons.
   ```python
 #train spatial view
 python train.py --view_name='spatial'
+```
+
+### tasks.py
+The MTE embeddings and their variants, MTE-temporal and MTE-spatial embeddings, are loaded and evaluated on land use classification, population density estimation, and housing price prediction.
+  ```python
 # eval MTE
 python tasks.py --task='mte'
    ```
